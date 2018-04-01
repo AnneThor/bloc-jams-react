@@ -28,6 +28,14 @@ class Album extends Component {
           <col id="song-duration-column" />
         </colgroup>
         <tbody>
+          {
+            this.state.album.songs.map( (song, i) =>
+            {return <tr className="song-details">
+              <td className="song-number">{i+1}.</td>
+              <td className="song-title">{song.title}</td>
+              <td className="song-duration">{Math.floor(song.duration/60)}:{Math.floor(song.duration%60)}</td>
+              </tr>} )
+          }
         </tbody>
       </table>
       </div>
