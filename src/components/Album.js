@@ -14,7 +14,7 @@ class Album extends Component {
     return (
       <div>
       <section id="album-info">
-        <img id="album-cover-art" src={this.state.album.albumCover}/>
+        <img id="album-cover-art" alt="album cover" src={this.state.album.albumCover}/>
         <div className="album-details">
           <h1 id="album-title">{this.state.album.title}</h1>
           <h2 className="artist">{this.state.album.artist}</h2>
@@ -29,9 +29,9 @@ class Album extends Component {
         </colgroup>
         <tbody>
           {
-            this.state.album.songs.map( (song, i) =>
-            {return <tr className="song-details">
-              <td className="song-number">{i+1}.</td>
+            this.state.album.songs.map( (song, index) =>
+            {return <tr className="song-details" key={index}>
+              <td className="song-number">{index+1}.</td>
               <td className="song-title">{song.title}</td>
               <td className="song-duration">{Math.floor(song.duration/60)}:{Math.floor(song.duration%60)}</td>
               </tr>} )
