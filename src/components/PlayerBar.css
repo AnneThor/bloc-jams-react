@@ -1,0 +1,51 @@
+.current-time, .total-time {
+  font-size: small;
+}
+
+.icon {
+  width: wrap;
+}
+
+.ion-pause {
+}
+
+.ion-play {
+}
+
+.ion-skip-backward, .ion-skip-forward {
+  color: lightpink;
+}
+
+.ion-skip-backward:hover, .ion-skip-forward:hover {
+  color: purple;
+}
+
+.player-bar{
+  padding-top: 5%;
+}
+
+.seek-bar{
+  width: 70%;
+  opacity: .7;
+  padding: 10px 0;
+  outline: none;
+  align-self: center;
+}
+
+.seek-bar:hover {
+    opacity: 1;
+    width: 80%;
+}
+
+
+#buttons {
+
+}
+#next{}
+#play-pause{}
+#previous{}
+#time-control{}
+
+#volume-control{
+  width: 100%;
+}

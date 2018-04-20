@@ -1,0 +1,138 @@
+tr {
+  background-color: rgba(0,0,0,.2);
+}
+
+button {
+  width: 40px;
+}
+
+.album-details {
+}
+
+.album-object {
+  align-self: center;
+}
+
+.artist{
+  font-weight: bold;
+  color: lightpink;
+}
+
+.ion-play {
+  color: purple;
+}
+
+.ion-pause {
+  color: purple;
+}
+
+.not-paused{}
+
+.not-playing{}
+
+.paused {}
+
+.playing{}
+
+.player-bar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.song {
+}
+
+.song-duration {
+  color: white;
+}
+
+.song-number {
+  font-weight: bold;
+  color: lightpink;
+}
+
+.song-title {
+    color: lightpink;
+}
+
+/* If not playing display song number only */
+td.not-playing .not-paused .ion-play,
+td.not-playing .not-paused .ion-pause {
+  display: none;
+}
+
+/* Hovering should display a play icon */
+
+tr:hover .not-playing .not-paused .ion-play {
+  display: block;
+}
+tr:hover .not-playing .not-paused .song-number {
+  display: none;
+}
+tr:hover .not-playing .paused .ion-play {
+  display: none;
+}
+tr:hover .not-playing .paused .song-number {
+  display: block;
+}
+
+/* If currently playing display pause icon only*/
+td.playing .not-paused .ion-play,
+td.playing .not-paused .song-number {
+  display: none;
+}
+
+/* If paused, display play icon */
+td.not-playing .paused .ion-pause,
+td.not-playing .paused .song-number {
+  display: none;
+}
+
+#album-cover-art {
+  width: 60%;
+  height: 60%;
+}
+
+#album-info {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-items: center;
+}
+
+#album-title {
+  color: white;
+}
+
+#release-info {
+  color: white;
+}
+
+#song-duration-column {
+  width: 20px;
+}
+
+#song-list {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#song-number-column {
+  width: 20px;
+}
+#song-title-column {
+  width: 40px;
+}
+
+/* experiment with sub grid */
+.album-sub-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}

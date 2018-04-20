@@ -1,0 +1,44 @@
+.library {
+  grid-area: middle;
+  justify-items: center;
+}
+
+.album-cover {
+  width: 200px;
+  height: 200px;
+}
+
+.album-link {
+  padding: 2.5%;
+  float: left;
+}
+
+.album-link:hover {
+  color: magenta;
+}
+
+.album-title {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.album-title:hover {
+  color: magenta;
+}
+
+.album-artist {
+  color: pink;
+  text-align: center;
+}
+
+.album-length {
+  color: white;
+  font-size: small;
+  text-align: center;
+}
+
+Link:hover {
+  color: black;
+  visited: white;
+}
