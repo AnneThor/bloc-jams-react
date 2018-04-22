@@ -10,26 +10,20 @@ body {
   background-image: url("./images/blurred_backgrounds/blur_bg_3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'left middle middle middle middle right'
+    '. middle middle middle middle .'
     'footer footer footer footer footer footer';
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr auto;
-  min-height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 15% 1fr 10%;
 }
-
-.header{ grid-area: header; }
-
-.left { grid-area: left; }
 
 .middle {
   grid-area: middle;
-  align-items: center;
 }
-
-.right { grid-area: right; }

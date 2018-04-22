@@ -1,7 +1,3 @@
-.landing {
-  grid-area: middle;
-}
-
 .hero-title {
   font-family: 'Fredoka One', cursive;
   font-size: 2em;
@@ -9,15 +5,19 @@
   text-align: center;
 }
 
-.selling-points, .point {
+.landing {
+  grid-area: middle;
+}
+
+.point, .selling-points {
   text-align: center;
 }
 
-.point-title {
-  font-family: 'Fredoka One', cursive;;
-  color: white;
-}
 .point-description {
   font-family: 'Roboto', sans-serif;
   color: pink;
+}
+.point-title {
+  font-family: 'Fredoka One', cursive;;
+  color: white;
 }

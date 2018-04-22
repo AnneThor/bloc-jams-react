@@ -1,6 +1,6 @@
-.library {
-  grid-area: middle;
-  justify-items: center;
+Link:hover {
+  color: black;
+  visited: white;
 }
 
 .album-cover {
@@ -38,7 +38,5 @@
   text-align: center;
 }
 
-Link:hover {
-  color: black;
-  visited: white;
+.library {
 }

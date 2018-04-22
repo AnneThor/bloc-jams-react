@@ -1,9 +1,10 @@
-tr {
-  background-color: rgba(0,0,0,.2);
-}
 
 button {
   width: 40px;
+}
+
+tr {
+  background-color: rgba(0,0,0,.2);
 }
 
 .album-details {
@@ -13,9 +14,19 @@ button {
   align-self: center;
 }
 
+.album-sub-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .artist{
   font-weight: bold;
   color: lightpink;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .ion-play {
@@ -46,6 +57,7 @@ button {
 
 .song-duration {
   color: white;
+  text-align: center;
 }
 
 .song-number {
@@ -55,6 +67,7 @@ button {
 
 .song-title {
     color: lightpink;
+    text-align: center;
 }
 
 /* If not playing display song number only */
@@ -93,6 +106,10 @@ td.not-playing .paused .song-number {
 #album-cover-art {
   width: 60%;
   height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
 }
 
 #album-info {
@@ -103,12 +120,23 @@ td.not-playing .paused .song-number {
   align-items: center;
 }
 
+#album-title, #release-info {
+  color: white;
+  text-align: center;
+}
+
 #album-title {
   color: white;
+  text-align: center;
+  padding: 5% 0 0 0;
+  margin: 0;
 }
 
 #release-info {
   color: white;
+  text-align: center;
+  padding: 0 0 5% 0;
+  margin: 0;
 }
 
 #song-duration-column {
@@ -125,14 +153,7 @@ td.not-playing .paused .song-number {
 #song-number-column {
   width: 20px;
 }
+
 #song-title-column {
   width: 40px;
-}
-
-/* experiment with sub grid */
-.album-sub-grid {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 }

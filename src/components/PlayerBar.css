@@ -21,31 +21,35 @@
 }
 
 .player-bar{
-  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .seek-bar{
   width: 70%;
   opacity: .7;
-  padding: 10px 0;
   outline: none;
-  align-self: center;
+  padding: 5% 0;
 }
 
 .seek-bar:hover {
     opacity: 1;
-    width: 80%;
 }
-
 
 #buttons {
-
+  display: flex;
+  align-items: center;
+  padding: 5% 0;
 }
-#next{}
-#play-pause{}
-#previous{}
-#time-control{}
 
-#volume-control{
-  width: 100%;
+#next, #play-pause, #previous {
+  width: 60px;
+  height: 20px;
+}
+
+#time-control, #volume-control {
+  display: flex;
+  align-items: center;
 }
